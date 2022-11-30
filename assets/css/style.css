@@ -1,0 +1,192 @@
+/* Setup  */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-size: 100%;
+    height: 97.5vh;
+}
+
+/* Header  */
+
+header {
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15rem;
+    width: 30rem;
+}
+
+/* Header - Résultat du combat */
+
+.result {
+    display: none;
+    border: #44208D solid 2px;
+    border-radius: 15px;
+    background-color: #FDEED5;
+    padding: 1rem;
+}
+
+/* Main */
+
+/* Main - Instruction */
+
+.instruction {
+    display: flex;
+    justify-content: center;
+    color: #44208D;
+    font-size: 3rem;
+}
+
+/* Main - Choix des armes  */
+
+.choice {
+    display: flex;
+    justify-content: center;
+}
+
+.rock,
+.paper,
+.shotgun {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #44208D solid 2px;
+    border-radius: 15%;
+    background-color: #FDEED5;
+    margin: 3rem;
+    color: #44208D;
+}
+
+.rock:hover,
+.paper:hover,
+.shotgun:hover {
+    border: #6EA0F7 solid 2px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(37deg, rgba(255, 255, 255, 1) 0%, rgba(247, 197, 110, 1) 35%, rgba(247, 128, 111, 1) 85%);
+}
+
+.choice1 img {
+    height: 15rem;
+    width: 15rem;
+    transition-property: top bottom left right;
+    transition-duration: 0.5s;
+}
+
+.choice1 img:hover {
+    scale: 1.2;
+}
+
+.choice2 img {
+
+    height: 15rem;
+    width: 15rem;
+
+    transition-property: top bottom left right;
+    transition-duration: 0.5s;
+}
+
+.choice2 img:hover {
+    scale: 1.2;
+}
+
+.choice3 img {
+    height: 15rem;
+    width: 15rem;
+    transition-property: top bottom left right;
+    transition-duration: 0.5s;
+}
+
+.choice3 img:hover {
+    scale: 1.2;
+}
+
+/* Main - Affichage des score en haut à droite  */
+
+.score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    color: #44208D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: #44208D 2px solid;
+    border-bottom: #44208D 2px solid;
+    border-bottom-left-radius: 15px;
+    background-color: #FDEED5;
+    padding-left: 2rem;
+}
+
+.score div {
+    margin: 0.5rem;
+}
+
+.versus {
+    display: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+
+}
+
+.versus div img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.player,
+.cpu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player div,
+.cpu div {
+    margin-top: 1rem;
+}
+
+.player {
+    color: #00866B;
+}
+
+.cpu {
+    color: #44208D;
+}
+
+/* Loader */
+
+
+.loaderRock,
+.loaderPaper {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 25vh;
+    opacity: 0;
+}
+
+.loaderShotgun {
+    color: rgb(184, 1, 1);
+    font-size: 26vh;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 1024px) {}

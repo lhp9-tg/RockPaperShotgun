@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/img/versus.png" />
+    <title>Rock Paper Shotgun</title>
+</head>
+
+<body>
+    <div class="loader">
+        <div>
+            <div class="loaderRock">Rock.</div>
+            <div class="loaderPaper">Paper.</div>
+            <div class="loaderShotgun">Shotgun.</div>
+        </div>
+    </div>
+
+    <header>
+        <img src="assets/img/logo.svg" class="logo" alt="Logo Rock Paper Shot Gun">
+
+        <div class="result"></div>
+
+        <div class="instruction">
+            <div>Choose your weapon !</div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="choice">
+            <div class="rock">
+                <div>Rock</div>
+                <div class="choice1"><img src="assets/img/rock.png"></div>
+
+            </div>
+            <div class="paper">
+                <div>Paper</div>
+                <div class="choice2"><img
+                        src='assets/img/paper.png'>
+                </div>
+            </div>
+            <div class="shotgun">
+                <div class="red">Shotgun</div>
+                <div class="choice3"><img src="assets/img/shotgun.png"></div>
+            </div>
+
+        </div>
+
+        <div class="versus">
+            <div class="player">
+                <img src="">
+                <div>You</div>
+            </div>
+            <div class="vs">
+                <img src="">
+            </div>
+            <div class="cpu">
+                <img src="">
+                <div>CPU</div>
+            </div>
+        </div>
+
+        <div class="score">
+            <div>Player : <span class="playerScore"></span></div>
+            <div>CPU : <span class="cpuScore"></span></div>
+            <div>Win rate : <span class="winPercent"></span></div>
+        </div>
+    </main>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
