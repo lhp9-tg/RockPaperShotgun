@@ -67,7 +67,7 @@ let draw = 0;
 
 function game() {
     playerOption.forEach(element => {
-
+        
         element.addEventListener('click', () => {
 
             // Choix du player
@@ -150,6 +150,8 @@ function game() {
             document.querySelector('.instruction').style.display = "none";
 
             document.querySelector('.versus').style.display = "flex";
+            document.querySelector('.reload').style.display = "flex";
+
 
             if (playerChoice == 'rock') { document.querySelector('.player img').src = "assets/img/rock.png" }
             else if (playerChoice == 'paper') { document.querySelector('.player img').src = 'assets/img/paper.png' }
@@ -165,9 +167,9 @@ function game() {
             // Affichage des scores
 
             document.querySelector('.result').textContent = result;
-            setTimeout(() => {
+            // setTimeout(() => {
                 document.querySelector('.result').style.display = "block";
-            }, 200);
+            // }, 200);
 
 
             if (result == 'You win') {
@@ -262,6 +264,7 @@ window.addEventListener('click', () => {
 
             document.querySelector('.result').style.display = "none";
             document.querySelector('.versus').style.display = "none";
+            document.querySelector('.reload').style.display = "none";
             document.querySelector('.choice').style.display = "flex";
             document.querySelector('.instruction').style.display = "flex";
             init = 1;

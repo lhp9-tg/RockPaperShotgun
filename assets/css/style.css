@@ -169,6 +169,12 @@ header {
     color: #44208D;
 }
 
+.reload {
+    color: red;
+    display: none;
+    justify-content: center;
+}
+
 /* Loader */
 
 
