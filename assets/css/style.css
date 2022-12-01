@@ -15,7 +15,7 @@ body {
 /* Header  */
 
 header {
-    height: 15rem;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +25,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 15rem;
-    width: 30rem;
+    height: 35vh;
+    width: 25vw;
 }
 
 /* Header - Résultat du combat */
@@ -81,8 +81,8 @@ header {
 }
 
 .choice1 img {
-    height: 15rem;
-    width: 15rem;
+    height: 35vh;
+    width: 40vh;
     transition-property: top bottom left right;
     transition-duration: 0.5s;
 }
@@ -92,10 +92,8 @@ header {
 }
 
 .choice2 img {
-
-    height: 15rem;
-    width: 15rem;
-
+    height: 35vh;
+    width: 40vh;
     transition-property: top bottom left right;
     transition-duration: 0.5s;
 }
@@ -105,8 +103,8 @@ header {
 }
 
 .choice3 img {
-    height: 15rem;
-    width: 15rem;
+    height: 35vh;
+    width: 40vh;
     transition-property: top bottom left right;
     transition-duration: 0.5s;
 }
@@ -122,6 +120,7 @@ header {
     top: 0;
     right: 0;
     width: 20rem;
+    height: 30vh;
     color: #44208D;
     display: flex;
     flex-direction: column;
@@ -187,6 +186,100 @@ header {
     opacity: 0;
 }
 
+@media screen and (max-width: 1440px) {
+    body {
+        font-size: 1.5rem;
+    }
+    .logo {
+        height : 30vh
+    }
+    .instruction {
+        font-size: 2rem;
+    }
+    .score {
+        width: 15rem;
+        height: 25vh;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .choice1 img {
+        height: 25vh;
+        width: 30vh;
+    }
+    .choice2 img {
+        height: 25vh;
+        width: 30vh;
+    }
+    .choice3 img {
+        height: 25vh;
+        width: 30vh;
+    }
+    .instruction {
+        font-size: 2rem;
+        position: absolute;
+        bottom : 15vh;
+    }
+    .logo {
+        height : 20vh
+    }
+    .score {
+        width: 15rem;
+        height: 22vh;
+    }
+    .rock,
+    .paper,
+    .shotgun {
+        margin : 1rem;
+    }
+}
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #F9BE73;
+        background-image:none;
+    }
+    .choice {
+        flex-wrap: wrap;
+    }
+
+    .instruction {
+        font-size: 1.5rem;
+        position: relative;
+        bottom : -65px
+    }
+    .logo {
+        width: 50vw;
+    }
+    .score {
+        font-size: 0.9rem;
+        width: 7rem;
+        height: 20vh;
+    }
+    .score div {
+        margin: 5px;
+    }
+    .versus{
+        flex-direction: column;
+        align-items: center;
+    }
+    .result {
+        font-size: 1.5rem;
+        position: relative;
+        bottom : -100px
+    }
+    .versus  {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .versus div img {
+        height: 6rem;
+        width: 6rem;
+    }
+    .loader {
+        display: none;
+    }
+}
